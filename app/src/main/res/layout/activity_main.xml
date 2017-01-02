@@ -1,0 +1,50 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.jogodavelha.MainActivity">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Quem vai ser o primeiro a jogar?"
+         android:layout_above="@+id/l_layout"
+         android:layout_centerHorizontal="true"
+         android:textSize="20sp"
+
+         />
+
+        <LinearLayout
+            android:id="@+id/l_layout"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/x_button"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/O"
+                android:textSize="30sp"
+                android:onClick="oInicia"
+                />
+
+            <Button
+                android:id="@+id/o_button"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/X"
+                android:textSize="30sp"
+                android:onClick="xInicia"
+                />
+        </LinearLayout>
+    
+    
+</RelativeLayout>

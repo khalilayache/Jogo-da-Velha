@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.jogodavelha.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="você"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pc"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/text_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="19dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text_placar_jogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/text_x" />
+
+    <TextView
+        android:id="@+id/text_placar_pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/text_x" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Jogo"
+        android:layout_above="@+id/LinearLayout_board"
+        android:layout_centerHorizontal="true"
+        android:onClick="comecaJogo"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/button_00"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_00"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+
+            <Button
+                android:id="@+id/button_01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_01"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+
+            <Button
+                android:id="@+id/button_02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_02"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/button_10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_10"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+
+            <Button
+                android:id="@+id/button_11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_11"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+
+            <Button
+                android:id="@+id/button_12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_12"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/button_20"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_20"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+
+            <Button
+                android:id="@+id/button_21"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_21"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+
+            <Button
+                android:id="@+id/button_22"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="jogada_22"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar/Jogar Novamente"
+        android:layout_above="@+id/LinearLayout_board"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="resetaJogo"
+        />
+
+</RelativeLayout>
